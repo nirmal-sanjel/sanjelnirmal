@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirmal Sanjel - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      color: #333;
+      line-height: 1.6;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #1d3557;
+      margin-bottom: 10px;
+    }
+    p.contact {
+      margin-bottom: 30px;
+      color: #555;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #e63946;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e63946;
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: #1d3557;
+      margin-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #1d3557;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      transition: transform 0.2s;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+    }
+    a {
+      color: #457b9d;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Nirmal Sanjel</h1>
+    <p class="contact">
+      <strong>Email:</strong> <a href="mailto:hackingwithnirmal@gmail.com">hackingwithnirmal@gmail.com</a><br>
+      <strong>Location:</strong><a href="https://maps.app.goo.gl/CKmAkZQoGSdX7cDB6">Dhapakhel-24, Lalitpur, Nepal</a> <br>
+    </p>
+
+    <section>
+      <h2>About Me</h2>
+      <h3>BCA Student & Art Enthusiast</h3>
+      <p>
+        I am a Bachelor of Computer Application student with a passion for both technology and art. I enjoy creating websites, exploring new technologies, and expressing my creativity through painting and sketching.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Computer Application (BCA)</strong> - Tribhuvan University, Nepal (2024 - Present)</li>
+        <li><strong>International Business</strong> - University of East London, UK (2024)</li>
+        <li><strong>High School</strong> - Shree Bajra Barahi Higher Secondary School (2018)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <h3>CEO at Nirmal Arts Gallery</h3>
+      <p>
+        Overseeing all aspects of the gallery, including curating exhibitions, managing art collections, and promoting local artists. Developing organizational and creative skills in a professional setting.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">UI Design</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Teamwork</span>
+        <span class="skill">Drawing</span>
+        <span class="skill">Painting</span>
+        <span class="skill">Sketching</span>
+        <span class="skill">Creativity</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+<script>
+  // Optional: Add some interactivity
+  document.querySelectorAll('.skill').forEach(skill => {
+    skill.addEventListener('click', () => {
+      alert(`You clicked on ${skill.textContent}`);
+    });
+  });
+</script>
